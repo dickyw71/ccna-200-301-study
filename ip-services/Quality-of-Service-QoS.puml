@@ -1,0 +1,26 @@
+@startuml IP Services - QoS
+@startmindmap
+
+caption Terms
+title Quality of Service (QoS)
+
++ QoS tools
+
+-- Forwarding per-hop behaviour (PHB)
+++_ help manage
++++ Bandwidth
++++ Jitter
++++ Delay
++++ Loss
+
+left side
+
+**_:classification
+marking
+queuing
+congestion
+policing
+shaping;
+
+@endmindmap
+@enduml
