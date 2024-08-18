@@ -1,0 +1,1 @@
+![QoS Terms Mindmap](../out/ip-services/Quality-of-Service-QoS/Quality-of-Service-QoS-1.svg)

@@ -1,13 +1,13 @@
 @startuml IP Services - QoS
 @startmindmap
 
-caption Terms
+caption Terms Mindmap
 title Quality of Service (QoS)
 
 + QoS tools
 
 -- Forwarding per-hop behaviour (PHB)
-++_ help manage
+++_ help to manage
 +++ Bandwidth
 +++ Jitter
 +++ Delay
@@ -15,12 +15,25 @@ title Quality of Service (QoS)
 
 left side
 
-**_:classification
-marking
-queuing
-congestion
-policing
-shaping;
+**_ classification
+***_ NBAR
+**_ marking
+***_ IPP field
+****_ IP Priority (3-bits 8-levels)
+*** DSCP field
+****_ Differenticated Services Code Point
 
+**_ queuing
+*** CBWFQ
+****_ Class-Based Weighted Fair Queuing 
+*** Round-robin scheduler
+*** Low Latency Queue
+**_ congestion
+** policing
+***_ Discards packets > BW limit CIR
+***_ WAN edge
+****_ SP CIR
+** shaping
+ 
 @endmindmap
 @enduml
